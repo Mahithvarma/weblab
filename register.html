@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .container{
+            background-color: #cfcdd7;
+            border: 2px solid black;
+            position: relative;
+            left: 375px;
+            top: 50px;
+            padding: 10px 30px 25px 30px;
+            width: fit-content;
+            height: fit-content;
+        }
+        .inp{
+            float: right;
+            height: 20px;
+            border: 2px solid black;
+            width: 300px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        .inp:hover{
+            border-color: #a9a6b6;
+        }
+        button{
+            padding: 5px 20px;
+            background-color: #1f1c33;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 0px;
+            font-weight: bolder;
+        }
+        button:hover {
+            background-color: #e58b9a;
+            color: #4e4b5d;
+            transition: all 0.2s ease-out;
+        }
+        label{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit the Student details</h1>
+        <form action="">
+            <div>
+                <label for="fname">Full Name: </label>
+                <input type="text" name="fname" id="fname" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="uname">User Name: </label>
+                <input type="text" name="uname" id="uname" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass" placeholder="Enter Password" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="cpass">Confirm Password: </label>
+                <input type="password" name="cpass" id="cpass" placeholder="Confirm Password" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="mail">Email: </label>
+                <input type="email" name="Email" id="mail" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="no">Mobile: </label>
+                <input type="number" name="Mobile number" id="no" maxlength="10" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="date"> DOB: </label>
+                <input type="date" name="Date of birth" id="date" class="inp">
+            </div>
+            <br>
+            <div>
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" cols="30" rows="1" class="inp"></textarea>
+            </div>
+            <br>
+            <div>
+                Gender: <input type="radio" name="SGender"> Male
+                        <input type="radio" name="SGender"> Female
+                        <input type="radio" name="SGender"> Others
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="Decision" id="dec">
+                <label for="dec"> I have read all the instructions. I accept the terms and conditions</label>
+            </div>
+            <br>
+            <div>
+                <button name="Submit" type="submit">Submit</button>
+                <button type="reset" name="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

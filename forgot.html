@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot frame</title>
+    <style>
+        .container {
+            margin: 150px auto;
+            border: 2px solid black;
+            height: fit-content;
+            width: fit-content;
+            background-color: #cfcdd7;
+            padding: 15px 30px 15px 30px;
+        }
+        input{
+            float: right;
+            margin-left: 20px;
+            padding: 3px 1px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        button {
+            font-weight: bolder;
+            position: relative;
+            left: 100px;
+            padding: 5px 20px;
+            background-color: #1f1c33;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 0px;
+        }
+        button:hover {
+            background-color: #e58b9a;
+            color: #4e4b5d;
+            transition: all 0.2s ease-out;
+        }
+        a{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="otp">Enter the OTP:</label>
+        <input type="text" name="otp" id="otp">
+        <br>
+        <a href="#">resend otp</a>
+        <br><br>
+        <label for="new">New Password:</label>
+        <input type="password" name="new" id="new">
+        <br><br>
+        <label for="confirm" >Confirm Password:</label>
+        <input type="password" name="confirm" id="confirm">
+        <br><br>
+        <button type="submit"> SUBMIT </button>
+    </div>
+</body>
+</html>

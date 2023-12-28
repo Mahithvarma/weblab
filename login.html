@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 150px auto;
+            border: 2px solid black;
+            height: 250px;
+            width: fit-content;
+            background-color: #cfcdd7;
+            padding: 0px 50px 35px 55px;
+        }
+        .container > *{
+            margin: 10px;
+        }
+        h1{
+            padding-left: 55px;
+        }
+        button {
+            font-weight: bolder;
+            position: relative;
+            left: 80px;
+            padding: 5px 20px;
+            background-color: #1f1c33;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 0px;
+        }
+        button:hover {
+            background-color: #e58b9a;
+            color: #4e4b5d;
+            transition: all 0.2s ease-out;
+        }
+        #uname{
+            padding: 3px 1px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        #pass{
+            padding: 3px 1px;
+            position: relative;
+            left: 6px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #signup{
+            position: relative;
+            top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login page</h1>
+        <h3>Welcome! Enter your credentials...</h3>
+
+        <label for="uname">User name: </label>
+        <input type="text" name="uname" id="uname" placeholder="Enter Username">
+        <br>
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password">
+        <br>
+        <button type="submit"> SUBMIT </button>
+        <br>
+        <a href="forgot.html">forgot password ?..</a>
+        <br>
+        <a href="register.html" id="signup">Don't have an account?</a>
+    </div>
+</body>
+
+</html>
